@@ -24,5 +24,7 @@ def build_model_RootNet(input, k_value):
 input = keras.layers.Input(shape=(225, 225, 3))
 k_value_input = keras.layers.Input(shape=(None, None, None))
 
+
+# k_value input shape its just a test at this moment.
 model = build_model_RootNet(input, k_value_input)
 model.summary()
